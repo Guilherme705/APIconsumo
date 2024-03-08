@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DncWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="sec1">
+        <header>
+            <h1>
+                DncWeather  
+            </h1>
+            <nav id="navegacao">
+                <a href="">
+                    Endereços
+                </a>
+                <a href="">
+                    Previsão do tempo
+                </a>
+            </nav>   
+        </header> 
+    </section>
+    <section id="sec2">
+        <h1 id="info">
+            Descubra Mais com Precisão:
+            <br>
+            Previsões do Tempo e endereços 
+            <br>  
+            em tempo real.
+        </h1>
+        <img id="nuvem" src="/imagens/nuvem.svg" alt="" srcset="">
+    </section>
+    <section id="sec3">
+        <div id="formCep">
+            <form action="" >
+                <label for="" class="labelCep">
+                    Primeiro Nome:
+                </label>
+                <br><br>
+                <input type="text" placeholder="Insira seu primeiro nome:" required>
+                <br><br><br>
+                <label for="" class="labelCep">
+                    E-mail:
+                </label>
+                <br><br>
+                <input type="email" placeholder="Insira seu e-mail" required>
+                <br><br><br>
+                <label for="" class="labelCep">
+                    Digite o CEP:
+                </label>
+                <br><br>
+                <input type="text" placeholder="Insira o CEP" required>
+                <br><br><br>
+                <label for="" class="labelCep">
+                    Digite a latitude e longitude para saber a previsão:
+                </label>
+                <br><br>
+                <input type="text" class="latLong" placeholder="Latitude" required>
+                <input type="text" id="long" class="latLong" placeholder="Longitude" required>
+                <input id="botao" type="submit" value="Acessar">
+            </form> 
+        </div>
+    </section>
+    <section>
+        <h1>
+            Resultado da busca por CEP:
+            <img src="/imagens/local.svg" alt="" srcset="">
+        </h1>
+        <div>
+            <nav>
+                <div>
+                    <h2>
+                        Logradouro/Nome
+                    </h2>
+                    <p>
+                        Justino Cobra
+                    </p>
+                </div>
+                <div>
+                    <h2>
+                        Bairro/Distrito
+                    </h2>
+                    <p>
+                        Vila Ema
+                    </p>
+                </div>
+                <div>
+                    <h2>
+                        Localidade/UF
+                    </h2>
+                    <p>
+                        SP
+                    </p>
+                </div>
+            </nav>
+        </div>
+    </section>
+</body>
+</html>
