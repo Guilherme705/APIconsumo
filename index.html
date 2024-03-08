@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--logo e barra de navegação horizontal-->
     <section id="sec1">
         <header>
             <h1>
@@ -22,6 +23,7 @@
             </nav>   
         </header> 
     </section>
+    <!--informativo e chamada para ação-->
     <section id="sec2">
         <h1 id="info">
             Descubra Mais com Precisão:
@@ -32,7 +34,9 @@
         </h1>
         <img id="nuvem" src="/imagens/nuvem.svg" alt="" srcset="">
     </section>
+    <!--seção de formulário para consulta cep-->
     <section id="sec3">
+        <!--div de sobreposição para armazenagem do formulário-->
         <div id="formCep">
             <form action="" >
                 <label for="" class="labelCep">
@@ -63,39 +67,32 @@
             </form> 
         </div>
     </section>
+    <!--resultados da consulta CEP-->
     <section>
-        <h1>
-            Resultado da busca por CEP:
+        <div id="resultadoCep">
+            <h1>
+                Resultado da busca por CEP:
+            </h1>
             <img src="/imagens/local.svg" alt="" srcset="">
-        </h1>
-        <div>
-            <nav>
-                <div>
-                    <h2>
-                        Logradouro/Nome
-                    </h2>
-                    <p>
-                        Justino Cobra
-                    </p>
-                </div>
-                <div>
-                    <h2>
-                        Bairro/Distrito
-                    </h2>
-                    <p>
-                        Vila Ema
-                    </p>
-                </div>
-                <div>
-                    <h2>
-                        Localidade/UF
-                    </h2>
-                    <p>
-                        SP
-                    </p>
-                </div>
-            </nav>
         </div>
+        <div id="table">
+            <table>
+                <tr>
+                    <td id="td1">
+                        <span class="result1">Logradouro/Nome</span>
+                        <span class="result1">Bairro/Distrito</span>
+                        <span class="result1">Localidade/UF</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="td2"> 
+                        <span class="result2">Justino Cobra</span>
+                        <span class="result2">Vila Ema</span>
+                        <span class="result2">SP</span>
+                    </td>
+                </tr>   
+            </table>
+        </div> 
     </section>
 </body>
 </html>
