@@ -164,3 +164,61 @@ footer a{
     text-decoration:none;
     color: white;
 }
+@media only screen and (max-width: 600px){
+    header h1{
+        font-size: 30px;
+        margin: 0px 0px 0px 20px;
+    }
+    #navegacao a{
+        font-size: 10px;
+        display: list-item;
+        list-style: none;
+    }
+    #sec2{
+        display: grid;
+    }
+    #info{
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    #sec2 img{
+        margin-left: 20px;
+    }
+    #formCep{
+        margin-top: 80px;
+    }
+    label{
+        margin-left: 2px;
+    }
+    input{
+        margin-left: 2px;
+    }
+    ::placeholder{
+        padding-left: 2px;
+        font-size: 15px;
+    }
+    #botao{
+        margin-left: 30px;
+    }
+    #resultadoCep h1{
+        font-size: 30px;
+    }
+    #td1 span{
+        font-size: 10px;
+        margin-left: -22px;
+    }
+    #td2 span{
+        font-size: 10px;
+        margin-left: -22px;
+        margin-right: -50px;
+    }
+}
+#resultadoClima h1{
+    font-size: 30px;
+}
+#resultClima1 h2{
+    font-size: 30px;
+}
+footer h1{
+    font-size: ;
+}
