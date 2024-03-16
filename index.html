@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DncWeather</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+         async function viaCepApi(){
+            const cep = document.getElementById('cep').value;
+            try {
+                const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+                const data = await response.json();
+                console.log(data);
+                document.getElementById('logradouro').value = data.logradouro;
+                document.getElementById('bairro').value = data.bairro;
+                document.getElementById('localidade').value = data.localidade;
+            } catch (error) {
+                alert(error.message);
+            }
+        }
+    </script>
 </head>
 <body>
     <!--logo e barra de navegação horizontal-->
@@ -43,27 +58,28 @@
                     Primeiro Nome:
                 </label>
                 <br><br>
-                <input type="text" placeholder="Insira seu primeiro nome:" required>
+                <input type="text" placeholder="Insira seu primeiro nome:">
                 <br><br><br>
                 <label for="" class="labelCep">
                     E-mail:
                 </label>
                 <br><br>
-                <input type="email" placeholder="Insira seu e-mail" required>
+                <input type="email" placeholder="Insira seu e-mail">
                 <br><br><br>
                 <label for="" class="labelCep">
                     Digite o CEP:
                 </label>
                 <br><br>
-                <input type="text" placeholder="Insira o CEP" required>
+                <input type="text" placeholder="Insira o CEP"  id="cep">
                 <br><br><br>
                 <label for="" class="labelCep">
                     Digite a latitude e longitude para saber a previsão:
                 </label>
                 <br><br>
-                <input type="text" class="latLong" placeholder="Latitude" required>
-                <input type="text" id="long" class="latLong" placeholder="Longitude" required>
-                <input id="botao" type="submit" value="Acessar">
+                <input type="text" class="latLong" placeholder="Latitude">
+                <input type="text" id="long" class="latLong" placeholder="Longitude">
+                <button type="button" id="botao" onclick="viaCepApi()">Acessar</button>
+
             </form> 
         </div>
     </section>
@@ -79,16 +95,22 @@
             <table>
                 <tr>
                     <td id="td1">
-                        <span class="result1">Logradouro/Nome</span>
-                        <span class="result1">Bairro/Distrito</span>
-                        <span class="result1">Localidade/UF</span>
+                        <label class="result1" for="">Logradouro/Nome</label>
+                        <label class="result1" for="">Bairro/Distrito</label>
+                        <label class="result1" for="">Localidade/UF</label>
                     </td>
                 </tr>
                 <tr>
                     <td id="td2"> 
-                        <span class="result2">Justino Cobra</span>
-                        <span class="result2">Vila Ema</span>
-                        <span class="result2">SP</span>
+                        <div>
+                            <input id="logradouro"  class="result2">
+                        </div>
+                        <div>
+                            <input id="bairro" class="result2">
+                        </div>
+                        <div>
+                            <input id="localidade" class="result2">
+                        </div>
                     </td>
                 </tr>   
             </table>
@@ -113,6 +135,5 @@
             <a href="">Termos de Uso |</a> <a href="">Politica de Privacidade</a>
         </h1>
     </footer>
-    <script src="index.js"></script>
 </body>
 </html>

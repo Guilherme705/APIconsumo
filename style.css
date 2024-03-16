@@ -76,13 +76,17 @@ input{
 .latLong{
     width:30%;
 }
-#botao{
+button{
     background: rgba(12, 112, 242, 0.9);
     font-size: 32px;
     color: white;
     margin-bottom: 70px;
     margin-top: 100px;
     cursor: pointer;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
 }
 #resultadoCep{
     font-size: 35px;
@@ -111,6 +115,8 @@ input{
     border-radius: 0 0 15px 15px;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 .result1{
     padding-right:30px;
@@ -120,11 +126,14 @@ input{
     font-weight: bold;
 }
 .result2{
-    padding-right:110px;
     color: black;
-    font-size: 25px;
-    padding-left: 30px;
+    font-size: 15px;
     font-weight: bold;
+    background-color: white; 
+}
+#logradouro{
+    margin-left: 0px;
+    width: 340px;
 }
 #resultadoClima{
     font-size: 35px;
@@ -165,6 +174,9 @@ footer a{
     color: white;
 }
 @media only screen and (max-width: 600px){
+    header{
+        width: 100%;
+    }
     header h1{
         font-size: 30px;
         margin: 0px 0px 0px 20px;
@@ -197,7 +209,7 @@ footer a{
         padding-left: 2px;
         font-size: 15px;
     }
-    #botao{
+    button{
         margin-left: 30px;
     }
     #resultadoCep h1{
@@ -212,13 +224,14 @@ footer a{
         margin-left: -22px;
         margin-right: -50px;
     }
-}
-#resultadoClima h1{
-    font-size: 30px;
-}
-#resultClima1 h2{
-    font-size: 30px;
-}
-footer h1{
-    font-size: ;
+    #resultadoClima h1{
+            font-size: 30px;
+    }
+    #resultClima1 h2{
+            font-size: 30px;
+    }
+    #td2{
+        display: list-item;
+    }
+  
 }
