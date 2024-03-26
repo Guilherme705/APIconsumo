@@ -1,4 +1,4 @@
-link do projeto:
+link do projeto: https://rad-zuccutto-7164fe.netlify.app
 link API consumo CEP: https://viacep.com.br/
 link Api consumo previsão do tempo: https://open-meteo.com/en/docs
 
