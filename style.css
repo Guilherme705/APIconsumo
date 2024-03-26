@@ -150,12 +150,12 @@ button{
 }
 #climaDados{
    background-color: white;
-   width: 80%;
+   width: 50%;
    margin-left: 120px;
    border-radius: 20px;
 }
 #climaDados input{
-   margin-left:300px;
+   margin-left:200px;
    width: 100%;
    color: black;
    font-size: 25px;
@@ -240,7 +240,7 @@ footer a{
         width: 220px;
     }
     #climaDados{
-        width: 250px;
+        width: 200px;
         border-radius: 0;
     }
     .latLong{
