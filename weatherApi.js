@@ -14,6 +14,6 @@ async function weather(){
         document.getElementById('16').value = 'As 16:00 á temperatura será de ' + data.hourly.temperature_2m[16]+ '°C';
         document.getElementById('20').value = 'As 20:00 á temperatura será de ' + data.hourly.temperature_2m[20]+ '°C';
     }catch (error){
-        alert(error.message);
+        alert(error.message = 'Latitude e Longitude incorretas');
     }
 }

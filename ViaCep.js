@@ -8,6 +8,6 @@ async function viaCepApi(){
         document.getElementById('bairro').value = data.bairro;
         document.getElementById('localidade').value = data.localidade;
     } catch (error) {
-        alert(error.message);
+        alert(error.message = 'cep mal formatado');
     }
 }
