@@ -148,18 +148,19 @@ button{
     margin-top: -60px;
     margin-left: 20px;
 }
-#resultClima1{
-    color: black;
-    font-size: 25px;
-    font-weight: bold;
-    display: flex;
-    background: white;   
-    padding:20px 80px 20px 80px;
-    border-radius: 20px;
+#climaDados{
+   background-color: white;
+   width: 80%;
+   margin-left: 120px;
+   border-radius: 20px;
 }
-#clima{
-   display: flex;
+#climaDados input{
+   margin-left:300px;
+   width: 100%;
+   color: black;
+   font-size: 25px;
    justify-content: center;
+   background: white; 
 }
 footer{
     background-color: #0C70F2;
@@ -233,5 +234,18 @@ footer a{
     #td2{
         display: list-item;
     }
+    #climaDados input{
+        font-size: 11px;
+        margin-left: -110px;
+        width: 220px;
+    }
+    #climaDados{
+        width: 250px;
+        border-radius: 0;
+    }
+    .latLong{
+        width: 90px;
+    }
+
   
 }

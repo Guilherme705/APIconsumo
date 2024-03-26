@@ -63,7 +63,7 @@
                 <br><br>
                 <input type="text" class="latLong" placeholder="Latitude" id="latitude">
                 <input type="text" id="long" class="latLong" placeholder="Longitude">
-                <button type="button" id="botao" onclick="viaCepApi(), weather()">Acessar</button>
+                <button type="button" id="botao" onclick="viaCepApi(), weather(), hora()">Acessar</button>
             </form> 
         </div>
     </section>
@@ -87,13 +87,13 @@
                 <tr>
                     <td id="td2"> 
                         <div>
-                            <input id="logradouro"  class="result2">
+                            <input id="logradouro" disabled class="result2">
                         </div>
                         <div>
-                            <input id="bairro" class="result2">
+                            <input id="bairro" disabled class="result2">
                         </div>
                         <div>
-                            <input id="localidade" class="result2">
+                            <input id="localidade" disabled class="result2">
                         </div>
                     </td>
                 </tr>   
@@ -108,10 +108,18 @@
             </h1>
             <img src="/imagens/clima.svg" alt="" srcset="">
         </div>
-        <div id="clima">
-            <h2  id="resultClima1">
-                Previsão de tempo de acordo com a região: 24° C
-            </h2>
+        <div id="climaDados">
+           <input type="text" disabled class="clima" id="00">
+           <br>
+           <input type="text" id="04" disabled class="clima">
+           <br>
+           <input type="text" id="08" disabled class="clima">
+           <br>
+           <input type="text" id="12" disabled class="clima">
+           <br>
+           <input type="text" id="16" disabled class="clima">
+           <br>
+           <input type="text" id="20" disabled class="clima">
         </div>
     </section>
     <footer>
